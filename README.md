@@ -1,0 +1,2 @@
+# approxbeziers
+Approximates bezier curves.
