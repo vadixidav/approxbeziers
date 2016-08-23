@@ -62,10 +62,9 @@ fn main() {
 
             let isolver = |i: usize| {
                 if i % 2 == 0 {
-                    [((2 * i) as f64 * a).sin(), -((2 * i) as f64 * a).cos()]
+                    [(i as f64 * a).sin(), -(i as f64 * a).cos()]
                 } else {
-                    [outer_radius * ((2 * i + 1) as f64 * a).sin(),
-                     -outer_radius * ((2 * i + 1) as f64 * a).cos()]
+                    [outer_radius * (i as f64 * a).sin(), -outer_radius * (i as f64 * a).cos()]
                 }
             };
 
